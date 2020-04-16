@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-craigaholliday",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESLint and Prettier Config from Craig Holliday forked from Wes Bos",
   "keywords": [
     "javascript",
@@ -28,7 +28,8 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "prettier": "^2.0.4",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
-    "@typescript-eslint/parser": "^2.28.0"
+    "@typescript-eslint/parser": "^2.28.0",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -43,7 +44,8 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "prettier": "^2.0.4",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
-    "@typescript-eslint/parser": "^2.28.0"
+    "@typescript-eslint/parser": "^2.28.0",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "lint": "eslint .",
