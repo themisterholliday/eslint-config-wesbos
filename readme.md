@@ -8,7 +8,7 @@ You might like them - or you might not. Don't worry you can always change them.
 * Fixes issues and formatting errors with Prettier
 * Lints + Fixes inside of html script tags
 * Lints + Fixes React via eslint-config-airbnb
-* You can see all the [rules here](https://github.com/wesbos/eslint-config-craigaholliday/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
+* You can see all the [rules here](https://github.com/themisterholliday/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
 
 ## Installing
 
@@ -75,7 +75,7 @@ In your `.eslintrc` file, it should look like this:
 ```json
 {
   "extends": [
-    "wesbos"
+    "craigaholliday"
   ]
 }
 ```
@@ -89,7 +89,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "wesbos"
+    "craigaholliday"
   ],
   "rules": {
     "no-console": 2,
@@ -136,7 +136,7 @@ Once you have done one, or both, of the above installs. You probably want your e
 
 1. You gotta eject first `npm run eject` or `yarn eject`
 1. Run `npx install-peerdeps --dev eslint-config-craigaholliday`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "wesbos"`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "craigaholliday"`
 
 
 ## 🤬🤬🤬🤬 IT'S NOT WORKING
