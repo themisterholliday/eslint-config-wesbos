@@ -8,7 +8,7 @@ You might like them - or you might not. Don't worry you can always change them.
 * Fixes issues and formatting errors with Prettier
 * Lints + Fixes inside of html script tags
 * Lints + Fixes React via eslint-config-airbnb
-* You can see all the [rules here](https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
+* You can see all the [rules here](https://github.com/themisterholliday/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
 
 ## Installing
 
@@ -26,7 +26,7 @@ I also install globally so that any project or rogue JS file I write will have l
 2. Then we need to install everything needed by the config:
 
 ```
-npx install-peerdeps --dev eslint-config-wesbos
+npx install-peerdeps --dev eslint-config-craigaholliday
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -36,7 +36,7 @@ npx install-peerdeps --dev eslint-config-wesbos
 ```json
 {
   "extends": [
-    "wesbos"
+    "craigaholliday"
   ]
 }
 ```
@@ -59,7 +59,7 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 1. First install everything needed:
 
 ```
-npx install-peerdeps --global eslint-config-wesbos
+npx install-peerdeps --global eslint-config-craigaholliday
 ```
 (**note:** npx is not a spelling mistake of **npm**. `npx` comes with when `node` and `npm` are installed and makes script running easier 😃)
 
@@ -75,7 +75,7 @@ In your `.eslintrc` file, it should look like this:
 ```json
 {
   "extends": [
-    "wesbos"
+    "craigaholliday"
   ]
 }
 ```
@@ -89,7 +89,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "wesbos"
+    "craigaholliday"
   ],
   "rules": {
     "no-console": 2,
@@ -135,8 +135,8 @@ Once you have done one, or both, of the above installs. You probably want your e
 ## With Create React App
 
 1. You gotta eject first `npm run eject` or `yarn eject`
-1. Run `npx install-peerdeps --dev eslint-config-wesbos`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "wesbos"`
+1. Run `npx install-peerdeps --dev eslint-config-craigaholliday`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "craigaholliday"`
 
 
 ## 🤬🤬🤬🤬 IT'S NOT WORKING
@@ -144,7 +144,7 @@ Once you have done one, or both, of the above installs. You probably want your e
 Start fresh. Sometimes global modules can goof you up. This will remove them all:
 
 ```
-npm remove --global eslint-config-wesbos babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
+npm remove --global eslint-config-craigaholliday babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
 ```
 
 To do the above for local, omit the `--global` flag.
