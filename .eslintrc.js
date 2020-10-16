@@ -112,8 +112,10 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-props-no-spreading': 'off',
   },
-  plugins: ['html', 'prettier', 'react-hooks', '@typescript-eslint'],
+  plugins: ['html', 'prettier', 'react-hooks'],
   overrides: [
     {
       extends: [
@@ -123,7 +125,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'prettier/@typescript-eslint',
       ],
-      files: ['*.ts', '*.tsx'],
+      files: ['**/*.ts', '**/*.tsx', '.ts', '.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         ecmaVersion: 2020,
@@ -248,8 +250,20 @@ module.exports = {
           },
         ],
         '@typescript-eslint/no-parameter-properties': 'off',
+        'react/jsx-filename-extension': [
+          2,
+          { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+        ],
+        'react/jsx-props-no-spreading': 'off',
       },
       plugins: ['html', 'prettier', 'react-hooks', '@typescript-eslint'],
+      settings: {
+        'import/resolver': {
+          node: {
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          },
+        },
+      },
     },
   ],
   settings: {
